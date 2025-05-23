@@ -1,0 +1,13 @@
+test\se\kth\iv1350\pointOfSale\integration\InventorySystemTest.class
+test\se\kth\iv1350\pointOfSale\integration\ItemInvalidExceptionTest.class
+test\se\kth\iv1350\pointOfSale\controller\ControllerTest.class
+test\se\kth\iv1350\pointOfSale\model\ReceiptTest.class
+test\se\kth\iv1350\pointOfSale\view\ViewTest.class
+test\se\kth\iv1350\pointOfSale\model\SaleTest.class
+test\se\kth\iv1350\pointOfSale\integration\PrinterTest.class
+test\se\kth\iv1350\pointOfSale\integration\DiscountDatabaseTest.class
+test\se\kth\iv1350\pointOfSale\dto\ItemDTOTest.class
+test\se\kth\iv1350\pointOfSale\integration\DatabaseConnectionExceptionTest.class
+test\se\kth\iv1350\pointOfSale\model\SoldItemTest.class
+test\se\kth\iv1350\pointOfSale\integration\RegisterTest.class
+test\se\kth\iv1350\pointOfSale\startUp\MainTest.class
