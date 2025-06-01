@@ -2,6 +2,8 @@ package se.kth.iv1350.pointOfSale.startUp;
 
 import se.kth.iv1350.pointOfSale.integration.SystemCreator;
 import se.kth.iv1350.pointOfSale.controller.Controller;
+import se.kth.iv1350.pointOfSale.view.TotalRevenueFileOutput;
+import se.kth.iv1350.pointOfSale.view.TotalRevenueView;
 import se.kth.iv1350.pointOfSale.view.View;
 import se.kth.iv1350.pointOfSale.integration.Printer;
 import se.kth.iv1350.pointOfSale.integration.Register;

@@ -20,24 +20,27 @@ public class InventorySystem {
     private boolean throwDatabaseConnectionException;
 
     /**
+     *
      * The method looks through number of items in the inventory system and check if it's in the database.
      * @param itemIdentity takes the input parameter of the item from user interface.
      * @return the itemDTO if the item is found, else null.
+     * @throws ItemInvalidException ItemInvalidException If no item with the specified ID is found in the inventory.
+     * @throws DatabaseConnectionException If there is a failure in connecting to the database.
      */
-public ItemDTO itemFound (int itemIdentity) throws ItemInvalidException, DatabaseConnectionException {
-    if (throwDatabaseConnectionException) {
-        throw new DatabaseConnectionException("Database is not running.");
-    }
-    if (itemIdentity == 999) {
-        throw new DatabaseConnectionException("Database is not running. Could not search for item.");
-    }
-    for (ItemDTO item: itemList) {
-        if (itemIdentity == item.getItemID()) {
-            return item;
+    public ItemDTO itemFound (int itemIdentity) throws ItemInvalidException, DatabaseConnectionException {
+        if (throwDatabaseConnectionException) {
+            throw new DatabaseConnectionException("Database is not running.");
         }
+        if (itemIdentity == 999) {
+            throw new DatabaseConnectionException("Database is not running. Could not search for item.");
+        }
+        for (ItemDTO item: itemList) {
+            if (itemIdentity == item.getItemID()) {
+                return item;
+            }
+        }
+        throw new ItemInvalidException("Item not found");
     }
-    throw new ItemInvalidException("Item not found");
-}
 
     /**
      * Update the inventory system of item sold.

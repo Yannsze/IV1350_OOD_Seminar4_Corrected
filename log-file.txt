@@ -1,12 +1,12 @@
-22 May 2025, 22:52:57Exception was thrown: Database is not running. Could not search for item.
+31 May 2025, 18:15:29Exception was thrown: Database is not running. Could not search for item.
 se.kth.iv1350.pointOfSale.integration.DatabaseConnectionException: Database is not running. Could not search for item.
 	at se.kth.iv1350.pointOfSale.integration.InventorySystem.itemFound(InventorySystem.java:32)
 	at se.kth.iv1350.pointOfSale.controller.Controller.scanItem(Controller.java:77)
 	at se.kth.iv1350.pointOfSale.view.View.runInitializeSale(View.java:58)
-	at se.kth.iv1350.pointOfSale.startUp.Main.main(Main.java:24)
-22 May 2025, 22:52:57Exception was thrown: Item not found
+	at se.kth.iv1350.pointOfSale.startUp.Main.main(Main.java:26)
+31 May 2025, 18:15:29Exception was thrown: Item not found
 se.kth.iv1350.pointOfSale.integration.ItemInvalidException: Item not found
 	at se.kth.iv1350.pointOfSale.integration.InventorySystem.itemFound(InventorySystem.java:39)
 	at se.kth.iv1350.pointOfSale.controller.Controller.scanItem(Controller.java:77)
 	at se.kth.iv1350.pointOfSale.view.View.runInitializeSale(View.java:68)
-	at se.kth.iv1350.pointOfSale.startUp.Main.main(Main.java:24)
+	at se.kth.iv1350.pointOfSale.startUp.Main.main(Main.java:26)
